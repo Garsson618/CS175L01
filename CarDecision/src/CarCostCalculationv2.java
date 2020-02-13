@@ -29,18 +29,18 @@ public class CarCostCalculationv2 {
 		double costGas = in.nextDouble();
 		double Reg = costGas*(milesPerYear/mpgReg);
 		double Hybrid = costGas*(milesPerYear/mpgHybrid);
-		System.out.println("Cost to own Toyota Corolla after year 1 for regular car: " + (costReg+Reg) + " for Toyota Prius: " + (costHybrid+Hybrid));
-		System.out.println("Cost to own Toyota Corolla after year 2 for regular car: " + (costReg+2*Reg) + " for Toyota Prius: " + (costHybrid+2*Hybrid));
-		System.out.println("Cost to own Toyota Corolla after year 3 for regular car: " + (costReg+3*Reg) + " for Toyota Prius: " + (costHybrid+3*Hybrid));
-		System.out.println("Cost to own Toyota Corolla after year 4 for regular car: " + (costReg+4*Reg) + " for Toyota Prius: " + (costHybrid+4*Hybrid));
-		System.out.println("Cost to own Toyota Corolla after year 5 for regular car: " + (costReg+5*Reg) + " for Toyota Prius: " + (costHybrid+5*Hybrid));
+		System.out.println("Cost to own "+nameReg+" after year 1 for regular car: " + (costReg+Reg) + " for "+nameHybrid+": " + (costHybrid+Hybrid));
+		System.out.println("Cost to own "+nameReg+" after year 2 for regular car: " + (costReg+2*Reg) + " for "+nameHybrid+": " + (costHybrid+2*Hybrid));
+		System.out.println("Cost to own "+nameReg+" after year 3 for regular car: " + (costReg+3*Reg) + " for "+nameHybrid+": " + (costHybrid+3*Hybrid));
+		System.out.println("Cost to own "+nameReg+" after year 4 for regular car: " + (costReg+4*Reg) + " for "+nameHybrid+": " + (costHybrid+4*Hybrid));
+		System.out.println("Cost to own "+nameReg+" after year 5 for regular car: " + (costReg+5*Reg) + " for "+nameHybrid+": " + (costHybrid+5*Hybrid));
 		double Reg5 = costReg+5*Reg;
 		double Hybrid5 = costHybrid+5*Hybrid;
 		
 		if (Reg5 > Hybrid5)
-			System.out.println("The Toyota Prius pays back after 5 years");
+			System.out.println("The "+nameHybrid+" pays back after 5 years");
 		else
-			System.out.println("The Toyota Corolla pays back after 5 years");
+			System.out.println("The "+nameReg+" pays back after 5 years");
 		
 	}
 
