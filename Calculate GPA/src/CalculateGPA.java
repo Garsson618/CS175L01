@@ -6,11 +6,10 @@ public class CalculateGPA {
 
 		Scanner in = new Scanner(System.in);
 
-		boolean run = true;
 		double GP = 0;
 		double TotalCH=0.0;
 		double TotalGP=0.0;
-		while (run = true){
+		for (boolean run = true; run!=false;){
 			System.out.print("Enter course information separated by commas (title, credit hours, letter grade) or type Q to quit: ");
 			String info = in.nextLine();
 			if (info.contentEquals("Q"))
