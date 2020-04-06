@@ -2,6 +2,7 @@
 public class CounterTester {
 
 	public static void main(String[] args) {
+				
 		Counter venue = new Counter();
 		for (int i=0;i<10;i++)
 			venue.click();
@@ -10,7 +11,6 @@ public class CounterTester {
 		int click=venue.getValue();
 		System.out.println("5");
 		System.out.println(click);
-		
 		venue.reset();
 		for (int i=0;i<3;i++)
 			venue.click();
@@ -19,17 +19,20 @@ public class CounterTester {
 		click=venue.getValue();
 		System.out.println("-1");
 		System.out.println(click);
-		
-		/*
-		concertCounter.click();
-		rValue=concertCounter.getValue();
-		System.out.println(rValue);
 
-		concertCounter.unclick();
-		concertCounter.unclick();
-		rValue=concertCounter.getValue();
-		System.out.println("concertcounter =" + rValue);
-		 */
+		Counter anotherVenue = new Counter();
+		anotherVenue.clickMany(10);
+		anotherVenue.unclickMany(5);
+		click=anotherVenue.getValue();
+		System.out.println("5");
+		System.out.println(click);
+		anotherVenue.reset();
+		anotherVenue.clickMany(3);
+		anotherVenue.unclickMany(4);
+		click=anotherVenue.getValue();
+		System.out.println("-1");
+		System.out.println(click);
+		
 	}
 
 }
